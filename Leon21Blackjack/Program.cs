@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace BlackJack_21
 {
     class program
@@ -13,7 +13,9 @@ namespace BlackJack_21
             string menyVal = "0";
             while (menyVal != "4")
             {
-
+                Console.ForegroundColor = ConsoleColor.Black;
+                Console.BackgroundColor = ConsoleColor.Red;
+                Console.Clear();
                 Console.WriteLine("Välj ett av de 4 alternativen");
                 Console.WriteLine("1. Spela Backjack(21)");
                 Console.WriteLine("2. Senatse vinnaren");
@@ -101,7 +103,7 @@ namespace BlackJack_21
                         break;
 
 
-                   
+
                     case "3":
                         string text = "Ditt mål är att tvinga datorn att få mer än 21 poäng.";
                         foreach (char c in text)
@@ -165,8 +167,6 @@ namespace BlackJack_21
                         Console.WriteLine("Detta valet finns inte");
                         break;
                 }
-
-
                 Console.WriteLine();
             }
 
